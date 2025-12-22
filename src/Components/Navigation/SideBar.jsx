@@ -1,7 +1,7 @@
 import { Codesandbox, TrendingUp, MessageSquare, Users, Settings, Info, LogOut } from "lucide-react";
 export const SideBar =() =>{
     return(
-        <div>
+        <div className="grid gap-10">
             <p>
         <Codesandbox />
       </p>
