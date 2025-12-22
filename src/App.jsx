@@ -10,8 +10,8 @@ function App() {
 
   return (
   <div >
-    <Header ></Header>
     <SideBar ></SideBar>
+    <Header ></Header>
   </div>
   )
 }
