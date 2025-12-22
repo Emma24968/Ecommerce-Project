@@ -1,7 +1,7 @@
 import { SearchBar } from "./SearchBar"
 
 export const Header = ()=>{
-    return <div>
+    return <>
         <SearchBar />
-    </div>
+    </>
 }
