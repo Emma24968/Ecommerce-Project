@@ -3,6 +3,7 @@
 import { Category } from "./Category";
 import { Color } from "./Color";
 import { Header } from "./Header";
+import { PriceRange } from "./Range";
 import { Rating } from "./Rating";
 import { Size } from "./Size";
 

@@ -8,9 +8,9 @@ export const PriceRange = () => {
 
   
   return (
-    <div className="range">
-      <h3>Price Range</h3>
-      <div className="price-container">
+    <div >
+      <h3 className="font-semibold">Price Range</h3>
+      <div className="flex gap-30 mb-3">
         <span>${price[0]}</span>
         <span>${price[1]}</span>
       </div>
@@ -20,7 +20,7 @@ export const PriceRange = () => {
         value={price}
         onInput={setPrice}
 />
-<div className="range-label">
+<div className="flex gap-35 mt-3">
     <span>0</span>
         <span>1000</span>
 
