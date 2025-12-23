@@ -3,9 +3,15 @@ export const Color = () => {
     <div className="color-filter">
       <div className="flex">
         {" "}
-        <div className=" p-1 m-1 rounded-full w-3 h-3 cursor-pointer">X</div>
+        <div className=" p-1 m-1 rounded-full w-3 h-3 border-2 cursor-pointer">X</div>
         <div className="bg-red-700 p-2 m-2 rounded-full w-3 h-3 cursor-pointer"></div>
         <div className="bg-yellow-700 p-2 m-2 rounded-full w-3 h-3 cursor-pointer"></div>
+        <input
+          type="radio"
+          name="category"
+          defaultChecked
+          className="accent-blue-500"
+        />
         <div className="bg-indigo-100 p-2 m-2 rounded-full w-3 h-3 cursor-pointer"></div>
       </div>
       <div className="row">
