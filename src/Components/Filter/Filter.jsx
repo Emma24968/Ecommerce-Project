@@ -12,15 +12,15 @@ export const Filter = () => {
     <div className="w-[15%]">
       <Header />
       <Category />
-      <hr />
+      <hr className='mt-3 mb-3' />
       <Size />
-      <hr />
+      <hr className='mt-3 mb-3' />
       <Color />
 
-      <hr />
+      <hr className='mt-3 mb-3' />
 
       <PriceRange />
-      <hr />
+      <hr className='mt-3 mb-3' />
       <Rating />
     </div>
 
