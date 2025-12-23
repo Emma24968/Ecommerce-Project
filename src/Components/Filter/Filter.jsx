@@ -18,7 +18,7 @@ export const Filter = () => {
 
       <hr />
 
-      {/* <PriceRange /> */}
+      <PriceRange />
       <hr />
       <Rating />
     </div>
