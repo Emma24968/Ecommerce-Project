@@ -12,10 +12,10 @@ export const Filter = () => {
       <Header />
       <Category />
       <hr />
-      <Color />
-      <hr />
-
       <Size />
+      <hr />
+      <Color />
+
       <hr />
 
       {/* <PriceRange /> */}

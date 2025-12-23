@@ -1,7 +1,7 @@
 export const Category = () => {
   return (
     <div>
-      <h3 className="font-bold">Category</h3>
+      <h3 className="font-semibold">Category</h3>
       <div className="grid grid-cols-2 gap-[3px]">
         <div className="grid grid-rows-1 gap-1.5">
           <button
