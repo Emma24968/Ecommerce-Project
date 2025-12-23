@@ -1,4 +1,3 @@
-import "./Color.css";
 export const Color = () => {
   return (
     <div className="color-filter">

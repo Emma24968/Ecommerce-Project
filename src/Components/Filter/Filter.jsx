@@ -1,8 +1,13 @@
+// import { Category } from "./Category";
+// import { Color } from "./Color";
+// import { Header } from "./Header";
+// // import Range, { PriceRange } from "./Range";
+// import { Rating } from "./Rating";
+// // import { Size } from "./Size";
+
 import { Category } from "./Category";
 import { Color } from "./Color";
-import "./Filter.css";
 import { Header } from "./Header";
-import Range, { PriceRange } from "./Range";
 import { Rating } from "./Rating";
 import { Size } from "./Size";
 
@@ -18,7 +23,7 @@ export const Filter = () => {
       <Size />
       <hr />
 
-      <PriceRange />
+      {/* <PriceRange /> */}
       <hr />
       <Rating />
     </div>

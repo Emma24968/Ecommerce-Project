@@ -1,6 +1,4 @@
-import "./Size.css";
-
-import { Circle, CircleCheckBig } from "lucide-react";
+;
 
 export const Size = () => {
   return (

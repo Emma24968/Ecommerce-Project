@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import { Header } from './Components/Header/Header'
 import { SideBar } from './Components/Navigation/SideBar'
+import { Filter } from './Components/Filter/Filter'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -12,6 +13,7 @@ function App() {
   <div >
     <SideBar ></SideBar>
     <Header ></Header>
+    <Filter />
   </div>
   )
 }
