@@ -5,6 +5,7 @@ import "./App.css";
 import { Header } from "./Components/Header/Header";
 import { SideBar } from "./Components/Navigation/SideBar";
 import { Filter } from "./Components/Filter/Filter";
+import { Product } from "./Components/Hero-Section/Product_Page";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -12,12 +13,23 @@ function App() {
   return (
     <div className="flex">
       <div className="w-[5%]">
-        
         <SideBar />
       </div>
       <div className="w-[95%]">
-        <Header />
-        <Filter />
+        <div className="w-full">
+          {" "}
+          <Header />
+        </div>
+        <div className="flex w-full">
+          <div className=" w-[18%]">
+            {" "}
+            <Filter />
+          </div>
+          <div className="">
+            {" "}
+            <Product />
+          </div>
+        </div>
       </div>
     </div>
   );

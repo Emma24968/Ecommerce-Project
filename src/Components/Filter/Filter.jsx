@@ -9,7 +9,7 @@ import { Size } from "./Size";
 
 export const Filter = () => {
   return (
-    <div className="w-[18%] bg-white rounded shadow p-4 sticky top-4 mt-4 mb-4">
+    <div className=" bg-white rounded shadow p-4 sticky top-4 mt-4 mb-4">
       <Header />
       <Category />
       <hr className='mt-1.5 mb-1.5 border-gray-200' />

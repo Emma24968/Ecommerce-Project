@@ -1,5 +1,5 @@
 export const Title =()=>{
-    <div>
+    <div className="flex ">
         <h3>On Sale</h3>
         <button>See all</button>
     </div>
