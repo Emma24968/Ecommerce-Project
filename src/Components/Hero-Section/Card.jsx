@@ -8,9 +8,15 @@ export const Card = () => {
         <img src={cashmere} alt="Cashmere" />
       </div>
       <div className="">
-        <p>Women wool cashmere</p>
-        <p>Rating:★★★★★</p>
+        <div className="">        <p>Women wool cashmere</p>
+        <p>
+          Rating:<span className="text-yellow-400 font-bold">★★★★★</span>{" "}
+        </p>
         <p>Available: 220</p>
+</div>
+        <div className="">
+          <button className="w-10 h-10 rounded bg-blue-800 font-[200px] text-white">+</button>
+        </div>
       </div>
     </div>
   );
