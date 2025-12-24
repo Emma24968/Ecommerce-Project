@@ -11,7 +11,7 @@ function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <div className="flex">
+    <div className="flex ">
       <div className="w-[5%]">
         <SideBar />
       </div>
@@ -20,7 +20,7 @@ function App() {
           {" "}
           <Header />
         </div>
-        <div className="flex w-full">
+        <div className="flex w-full ml-4  bg-gray-50">
           <div className=" w-[18%]">
             {" "}
             <Filter />
