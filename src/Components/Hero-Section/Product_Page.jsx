@@ -3,9 +3,10 @@ import { Title } from "./Title"
 
 export const Product =()=>{
     return(
-        <div>
+        <div className="flex">
           <Title />  
           <Card />
+
         </div>
     )
 }
