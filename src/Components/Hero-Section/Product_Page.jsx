@@ -13,20 +13,22 @@ export const Product = () => {
   return (
     <div className="flex">
       <Title />
-      <div>
-        <Card title={`Women's Tech Short Sleeve`} image={techSleeve} />
-        <Card title={"Cashmere Wool Blend Coat"} image={cashmere} />
-        <Card title={"French Terry Fleece Jogger"} image={fleece} />
-      </div>
-      <div>
-        <Card title={"Lightweight Waffle Full-Length"} image={waffle} />
-        <Card title={`Champion Women's Shorts`} image={short} />
-        <Card title={`Women's Slim-Fit`} image={slimFit} />
-      </div>
-      <div>
-        <Card title={`Men's Slim-Fit`} image={men_slimFit} />
-        <Card title={`Champion Men's Shorts`} image={men_champions} />
-        <Card title={`Men's Tech Short Sleeve`} image={men_tech} />
+      <div >
+        <div className="flex">
+          <Card title={`Women's Tech Short Sleeve`} image={techSleeve} />
+          <Card title={"Cashmere Wool Blend Coat"} image={cashmere} />
+          <Card title={"French Terry Fleece Jogger"} image={fleece} />
+        </div>
+        <div className="flex">
+          <Card title={"Lightweight Waffle Full-Length"} image={waffle} />
+          <Card title={`Champion Women's Shorts`} image={short} />
+          <Card title={`Women's Slim-Fit`} image={slimFit} />
+        </div>
+        <div className="flex">
+          <Card title={`Men's Slim-Fit`} image={men_slimFit} />
+          <Card title={`Champion Men's Shorts`} image={men_champions} />
+          <Card title={`Men's Tech Short Sleeve`} image={men_tech} />
+        </div>
       </div>
     </div>
   );

@@ -21,7 +21,7 @@ function App() {
           <Header />
         </div>
         <div className="flex w-full ml-4  bg-gray-50">
-          <div className=" w-[18%]">
+          <div className=" w-[18%] pl-[10px]">
             {" "}
             <Filter />
           </div>

@@ -1,7 +1,7 @@
 
 export const Card = ({title, image}) => {
   return (
-   <div className="Product-details w-[75%] bg-white m-10 p-4 rounded">
+   <div className=" w-[60%] bg-white m-10 p-4 rounded">
   <div className="bg-gray-500 rounded w-full h-[260px] flex items-center justify-center overflow-hidden">
     <img
       src={image}
