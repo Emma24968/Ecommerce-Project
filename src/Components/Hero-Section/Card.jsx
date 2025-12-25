@@ -1,5 +1,5 @@
 
-export const Card = ({title, image}) => {
+export const Card = ({title, image, rating, stock}) => {
   return (
    <div className=" w-[60%] bg-white m-10 p-4 rounded">
   <div className="bg-gray-500 rounded w-full h-[260px] flex items-center justify-center overflow-hidden">
@@ -17,7 +17,7 @@ export const Card = ({title, image}) => {
         Rating:
         <span className="text-yellow-400 font-bold">★★★★★</span>
       </p>
-      <p>Available: 220</p>
+      <p>Available: {stock}</p>
     </div>
 
     <button className="w-10 h-10 self-end rounded bg-blue-800 text-[20px] text-white">
