@@ -1,14 +1,12 @@
-import cashmere from "../../assets/Media_Folder/cashmere.png";
-import techSleeve from "../../assets/Media_Folder/tech-short-sleeve.png"
 
-export const Card = ({title}) => {
+export const Card = ({title, image}) => {
   return (
    <div className="Product-details w-[75%] bg-white m-10 p-4 rounded">
   <div className="bg-gray-500 rounded w-full h-[260px] flex items-center justify-center overflow-hidden">
     <img
-      src={techSleeve}
+      src={image}
       alt="Cashmere"
-      className="w-full h-full object-contain"
+      className="w-full h-full object-contain" 
     />
   </div>
 
