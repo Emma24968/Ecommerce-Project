@@ -1,9 +1,17 @@
-import { Codesandbox, TrendingUp, MessageSquare, Users, Settings, Info, LogOut } from "lucide-react";
-export const SideBar =() =>{
-    return(
-        <div className="grid gap-10 w-[20%]">
-            <h1>LOGO</h1>
-            <p>
+import {
+  Codesandbox,
+  TrendingUp,
+  MessageSquare,
+  Users,
+  Settings,
+  Info,
+  LogOut,
+} from "lucide-react";
+export const SideBar = () => {
+  return (
+    <div className="grid gap-10 w-[20%] place-items-center">
+      <h1>LOGO</h1>
+      <p>
         <Codesandbox />
       </p>
       <p>
@@ -21,7 +29,9 @@ export const SideBar =() =>{
       <p>
         <Info />
       </p>
-      <p><LogOut /></p>
-        </div>
-    )
-}
+      <p>
+        <LogOut />
+      </p>
+    </div>
+  );
+};
