@@ -16,11 +16,11 @@ function App() {
         <SideBar />
       </div>
       <div className="w-[95%]">
-        <div className="w-full">
+        <div className="w-full ml-4">
           {" "}
           <Header />
         </div>
-        <div className="flex w-full ml-4  bg-gray-50">
+        <div className="flex w-full  bg-gray-50">
           <div className=" w-[18%] pl-[10px]">
             {" "}
             <Filter />

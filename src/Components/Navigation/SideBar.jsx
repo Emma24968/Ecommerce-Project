@@ -7,10 +7,11 @@ import {
   Info,
   LogOut,
 } from "lucide-react";
+import logo from '../../assets/Media_Folder/logo.png'
 export const SideBar = () => {
   return (
-    <div className="grid gap-10 w-[20%] place-items-center">
-      <h1>LOGO</h1>
+<div className="sticky top-0 h-100 gap-4 grid  pl-4 pt-2 bg-white overflow-hidden">
+<img src={logo} alt="logo" className="w-70 object-contain" />
       <p>
         <Codesandbox />
       </p>
