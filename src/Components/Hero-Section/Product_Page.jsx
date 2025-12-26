@@ -14,7 +14,7 @@ export const Product = () => {
   return (
     <div className="flex">
       <Title />
-      <div>
+      <div className="grid grid-cols-3">
         {products.map((product) => (
           <Card title={product.name} image={product.image} rating={product.rating} stock={product.available}/>
         ))}

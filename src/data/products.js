@@ -42,7 +42,7 @@ export const products = [
     "featured": false,
     "bestSeller": true,
     "newItem": false,
-    "image": "https://images.unsplash.com/photo-1585386959984-a41552231693"
+    "image": "https://images.unsplash.com/photo-1752778597990-f28dfb13c551"
   },
   {
     "id": 4,

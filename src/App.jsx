@@ -19,7 +19,7 @@ function App() {
           <Header />
         </div>
         <div className="flex w-full  bg-gray-50">
-          <div className=" w-[18%] pl-[10px]">
+          <div className=" w-[19%] pl-[10px]">
             {" "}
             <Filter />
           </div>
