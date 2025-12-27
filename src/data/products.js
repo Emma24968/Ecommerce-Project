@@ -87,7 +87,7 @@ export const products = [
     "featured": false,
     "bestSeller": false,
     "newItem": true,
-    "image": "https://images.unsplash.com/photo-1618354691373-0c1cde7cfcaa"
+    "image": "https://images.unsplash.com/photo-1713884196922-66e38abd51b0"
   },
   {
     "id": 7,
@@ -132,7 +132,7 @@ export const products = [
     "featured": false,
     "bestSeller": false,
     "newItem": true,
-    "image": "https://images.unsplash.com/photo-1602810318383-e386cc6e6bbd"
+    "image": "https://images.unsplash.com/photo-1571455786673-9d9d6c194f90"
   },
   {
     "id": 10,
@@ -162,7 +162,7 @@ export const products = [
     "featured": false,
     "bestSeller": false,
     "newItem": false,
-    "image": "https://images.unsplash.com/photo-1542060748-10c28b62716c"
+    "image": "https://plus.unsplash.com/premium_photo-1673286712645-9600beaa4a92"
   },
   {
     "id": 12,
@@ -177,7 +177,7 @@ export const products = [
     "featured": true,
     "bestSeller": false,
     "newItem": false,
-    "image": "https://images.unsplash.com/photo-1592878849129-7d6c2d1bfa49"
+    "image": "https://images.unsplash.com/photo-1659353216645-8b50ba38c9e9"
   },
   {
     "id": 13,
@@ -207,7 +207,7 @@ export const products = [
     "featured": false,
     "bestSeller": true,
     "newItem": false,
-    "image": "https://images.unsplash.com/photo-1593032465171-8a31b2c7a6ab"
+    "image": "https://plus.unsplash.com/premium_photo-1663036369855-8d6fd3a87d0c"
   },
   {
     "id": 15,
@@ -252,7 +252,7 @@ export const products = [
     "featured": false,
     "bestSeller": false,
     "newItem": false,
-    "image": "https://images.unsplash.com/photo-1593032580308-d4a9f2ed0b84"
+    "image": "https://plus.unsplash.com/premium_photo-1663127502742-b2c566c01a8a"
   },
   {
     "id": 18,
@@ -267,7 +267,7 @@ export const products = [
     "featured": false,
     "bestSeller": false,
     "newItem": false,
-    "image": "https://images.unsplash.com/photo-1600185365483-26d7c63c51e8"
+    "image": "https://plus.unsplash.com/premium_photo-1726769202190-ad2a3f2f360b"
   },
   {
     "id": 19,

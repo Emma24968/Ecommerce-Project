@@ -13,7 +13,7 @@ function App() {
       <div className="w-[5%]">
         <SideBar />
       </div>
-      <div className="w-[90%]">
+      <div className="w-[95%] overflow-hidden">
         <div className="w-full ml-4">
           {" "}
           <Header />

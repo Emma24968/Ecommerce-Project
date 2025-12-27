@@ -1,8 +1,8 @@
 
 export const Card = ({title, image, rating, stock}) => {
   return (
-   <div className=" w-[60%] bg-white m-10 p-4 rounded">
-  <div className=" rounded w-full h-[260px] flex items-center justify-center overflow-hidden">
+   <div className=" w-[80%] bg-white m-7 p-3 rounded">
+  <div className=" rounded w-full h-[200px] flex items-center justify-center overflow-hidden">
     <img
       src={image}
       alt={title}
