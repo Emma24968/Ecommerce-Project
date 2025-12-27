@@ -12,7 +12,7 @@ import men_tech from "../../assets/Media_Folder/men-tech.png";
 import { products } from "../../data/products";
 export const Product = () => {
   return (
-    <div className="flex">
+    <div className="flex ">
       <Title />
       <div className="grid grid-cols-3">
         {products.map((product) => (

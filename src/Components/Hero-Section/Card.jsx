@@ -6,7 +6,7 @@ export const Card = ({title, image, rating, stock}) => {
     <img
       src={image}
       alt={title}
-      className="w-full h-full object-contain"
+      className="w-full h-full object-cover"
     />
   </div>
 
