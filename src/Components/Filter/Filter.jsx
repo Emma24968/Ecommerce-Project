@@ -7,11 +7,11 @@ import { PriceRange } from "./Range";
 import { Rating } from "./Rating";
 import { Size } from "./Size";
 
-export const Filter = () => {
+export const Filter = ({products, onFilterCategory, onClear, selectedCategory}) => {
   return (
     <div className="bg-white rounded shadow p-4 mt-4 mb-4">
-  <Header />
-  <Category />
+  <Header onClear={onClear}/>
+  <Category products={products} selectedCategory={selectedCategory} onFilter={onFilterCategory} />
   <hr className='mt-1.5 mb-1.5 border-gray-200' />
   <Size />
   <hr className='mt-1 mb-1 border-gray-200' />
