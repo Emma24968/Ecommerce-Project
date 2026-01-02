@@ -1,6 +1,9 @@
 const sizes = ["XS", "S", "M", "L", "XL"];
 
-export const Size = () => {
+export const Size = ({onFilter}) => {
+  const handlefilter=(size)=>{
+    onFilter(size)
+  }
   return (
     <div>
       <h3 className="font-semibold mb-2">Size</h3>
@@ -14,6 +17,7 @@ export const Size = () => {
               type="radio"
               value={size}
               className="accent-black"
+              onChange={()=>handlefilter(size)}
             />
             <span>{size}</span>
           </label>

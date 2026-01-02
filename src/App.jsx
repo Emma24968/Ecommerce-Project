@@ -11,10 +11,17 @@ function App() {
   // hooks
   const [products, setProducts] = useState(initialProducts)
   const [selectedCategory, setSelectedCategory] = useState("")
+  const [selectedSize, setSelectedSize]=useState('')
 
   const onFilterCategoryHandler = (category) => {
     setSelectedCategory(category)
     const filterdproducts = initialProducts.filter(product => product.category.includes(category))
+    setProducts(filterdproducts)
+  }
+
+  const onFilterSizeHandler=(size)=>{
+    setSelectedSize(size)
+    const filterdproducts = initialProducts.filter(product =>product.sizes.includes(size))
     setProducts(filterdproducts)
   }
 
@@ -38,6 +45,8 @@ function App() {
               <Filter 
               products={products} 
               selectedCategory={selectedCategory}
+              selectedSize={selectedSize}
+              onFilterSize={onFilterSizeHandler}
               onFilterCategory={onFilterCategoryHandler} 
               onClear={onClearFilterHandler}
               />
