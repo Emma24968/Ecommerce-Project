@@ -1,10 +1,10 @@
 import { Card } from "./Card";
 import { Title } from "./Title";
 
-export const Product = ({products, selectedCategory}) => {
+export const Product = ({products, selectedCategory, selection}) => {
   return (
     <div className="flex flex-col">
-      <h2>Filtering by : {selectedCategory}</h2>
+      <h2>Filtering by : {selectedCategory},{selection}</h2>
       <Title />
       <div className="grid grid-cols-3">
         {products.map((product) => (

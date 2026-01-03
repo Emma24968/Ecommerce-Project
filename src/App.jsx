@@ -7,17 +7,24 @@ import { Product } from "./Components/Hero-Section/Product_Page";
 import { products as initialProducts } from "./data/products";
 
 function App() {
-  const [count, setCount] = useState(0);
   // hooks
   const [products, setProducts] = useState(initialProducts)
   const [selectedCategory, setSelectedCategory] = useState("")
   const [selectedSize, setSelectedSize]=useState('')
+  const [selection,setSelection]=useState('')
+
 
   const onFilterCategoryHandler = (category) => {
     setSelectedCategory(category)
     const filterdproducts = initialProducts.filter(product => product.category.includes(category))
     setProducts(filterdproducts)
   }
+
+    const checkStatus =(size)=>{
+      setSelection((initial)=>
+      initial===size? '':size)
+    }
+    console.log('selection',selection)
 
   const onFilterSizeHandler=(size)=>{
     setSelectedSize(size)
@@ -46,6 +53,8 @@ function App() {
               products={products} 
               selectedCategory={selectedCategory}
               selectedSize={selectedSize}
+              selection={selection}
+              onCheck={checkStatus}
               onFilterSize={onFilterSizeHandler}
               onFilterCategory={onFilterCategoryHandler} 
               onClear={onClearFilterHandler}
