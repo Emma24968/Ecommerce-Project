@@ -7,7 +7,7 @@ import { Header } from "./Header";
 import { PriceRange } from "./Range";
 import { Rating } from "./Rating";
 import { Size } from "./Size";
-export const Filter = ({products, onFilterCategory,onFilterSize, onClear,onCheck, selectedCategory, rating,onRating, selectedSize}) => {
+export const Filter = ({products, onFilterCategory,onFilterSize, onClear,onCheck, selectedCategory, rating,onRating, selectedSize,color,onSelectedColor}) => {
   return (
     <div className="bg-white rounded shadow p-4 mt-4 mb-4">
   <Header onClear={onClear}/>
@@ -16,7 +16,7 @@ export const Filter = ({products, onFilterCategory,onFilterSize, onClear,onCheck
   <Size products={products} selectedSize={selectedSize} oncheckStatus={onCheck}
  onFilter={onFilterSize}/>
   <hr className='mt-1 mb-1 border-gray-200' />
-  <Color />
+  <Color products={products} color={color} onFilter={onSelectedColor}/>
   <hr className='mt-1 mb-1 border-gray-200' />
   <PriceRange />
   <hr className='mt-1 mb-1 border-gray-200' />

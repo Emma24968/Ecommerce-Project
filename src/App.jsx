@@ -13,6 +13,7 @@ function App() {
   const [selectedSize, setSelectedSize]=useState('')
   const [rating, setRating]=useState('')
   const [selection,setSelection]=useState('')
+  const [selectedColor,setselectedColor]=useState('')
 
 
   const onFilterCategoryHandler = (category) => {
@@ -34,6 +35,11 @@ function App() {
   const onRatingHandler=(rating)=>{
     setRating(rating)
     const filterdproducts = initialProducts.filter(product =>product.rating===rating)
+    setProducts(filterdproducts)
+  }
+  const onselectedColorHandler=(selectedColor)=>{
+    setselectedColor(selectedColor)
+    const filterdproducts = initialProducts.filter(product =>product.colors.includes(selectedColor))
     setProducts(filterdproducts)
   }
 
@@ -65,6 +71,8 @@ function App() {
               onClear={onClearFilterHandler}
               rating={rating}
               onRating={onRatingHandler}
+              selectedColor={selectedColor}
+              onSelectedColor={onselectedColorHandler}
               />
             </div>
           </div>

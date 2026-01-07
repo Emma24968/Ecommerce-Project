@@ -9,15 +9,22 @@ const colors = [
   { name: "gray", class: "bg-gray-500" },
 ];
 
-
-export const Color = () => {
+export const Color = ({ onFilter }) => {
+  const handlefilter = (color) => {
+    onFilter(color);
+  };
   return (
     <div className="grid grid-cols-5 gap-3">
-      {colors.map((color) => (
-        <label key={color} className="cursor-pointer">
-          <input type="radio" name="color" className="hidden peer" />
+      {colors.map((color, index) => (
+        <label key={index} className="cursor-pointer">
+          <input
+            type="radio"
+            name="color"
+            onChange={() => handlefilter(color.name)}
+            className="hidden peer"
+          />
           <div
-            className={`w-4 h-4 rounded-full bg-${color} peer-checked:ring-2 ${color.class} ring-black`}
+            className={`w-4 h-4 rounded-full peer-checked:ring-2 ${color.class}`}
           />
         </label>
       ))}
