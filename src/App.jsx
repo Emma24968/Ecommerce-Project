@@ -11,6 +11,7 @@ function App() {
   const [products, setProducts] = useState(initialProducts)
   const [selectedCategory, setSelectedCategory] = useState("")
   const [selectedSize, setSelectedSize]=useState('')
+  const [rating, setRating]=useState('')
   const [selection,setSelection]=useState('')
 
 
@@ -24,11 +25,15 @@ function App() {
       setSelection((initial)=>
       initial===size? '':size)
     }
-    console.log('selection',selection)
 
   const onFilterSizeHandler=(size)=>{
     setSelectedSize(size)
     const filterdproducts = initialProducts.filter(product =>product.sizes.includes(size))
+    setProducts(filterdproducts)
+  }
+  const onRatingHandler=(rating)=>{
+    setRating(rating)
+    const filterdproducts = initialProducts.filter(product =>product.rating===rating)
     setProducts(filterdproducts)
   }
 
@@ -58,6 +63,8 @@ function App() {
               onFilterSize={onFilterSizeHandler}
               onFilterCategory={onFilterCategoryHandler} 
               onClear={onClearFilterHandler}
+              rating={rating}
+              onRating={onRatingHandler}
               />
             </div>
           </div>
