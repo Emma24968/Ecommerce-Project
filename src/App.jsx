@@ -63,12 +63,12 @@ function App() {
 
   return (
     <div className="flex h-screen ">
-      <div className="w-[5%] sticky top-10">
+      <div className="w-[5%] ">
         <SideBar />
       </div>
       <div className="w-[95%] flex flex-col">
-        <div className="sticky top-0 z-50 bg-white ml-4">
           <Header search={search} onSearch={setSearch} />
+        <div className="sticky top-0 z-50 bg-white ml-4">
           
         </div>
         <div className="flex flex-1 bg-gray-50 ">
