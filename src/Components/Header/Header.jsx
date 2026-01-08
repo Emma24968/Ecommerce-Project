@@ -1,7 +1,7 @@
 import { SearchBar } from "./SearchBar"
 
-export const Header = ()=>{
+export const Header = ({search,onSearch})=>{
     return <>
-        <SearchBar />
+        <SearchBar search={search} onSearch={onSearch}/>
     </>
 }
