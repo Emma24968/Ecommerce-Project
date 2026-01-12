@@ -1,5 +1,5 @@
-
-export const Card = ({title, image, rating, stock}) => {
+const ratings = ['★','★★','★★★','★★★★','★★★★★']
+export const Card = ({title, image, rating, stock, onButtonClick}) => {
   return (
    <div className=" w-[80%] bg-white m-7 p-3 rounded">
   <div className=" rounded w-full h-[200px] flex items-center justify-center overflow-hidden">
@@ -15,12 +15,13 @@ export const Card = ({title, image, rating, stock}) => {
       <p className="font-semibold">{title}</p>
       <p>
         Rating:
-        <span className="text-yellow-400 font-bold">★★★★★</span>
+
+        <span className="text-yellow-400 font-bold">{ratings[rating - 1]}</span>
       </p>
       <p>Available: {stock}</p>
     </div>
 
-    <button className="w-10 h-10 self-end rounded bg-blue-800 text-[20px] text-white">
+    <button onClick={onButtonClick} className="w-10 h-10 self-end cursor-pointer rounded bg-blue-800 text-[20px] text-white">
       +
     </button>
   </div>

@@ -15,6 +15,13 @@ function App() {
   const [selection, setSelection] = useState("");
   const [selectedColor, setSelectedColor] = useState("");
   const [search, setSearch] = useState("");
+  const [count, setCount] = useState(0)
+  console.log(count)
+
+  const onButtonAdd = ()=>{
+setCount(count + 1)
+  }
+
   const filterdproducts = initialProducts.filter((product) =>
     product.name.toLowerCase().includes(search.toLowerCase())
   );
@@ -67,7 +74,7 @@ function App() {
         <SideBar />
       </div>
       <div className="w-[95%] flex flex-col">
-          <Header search={search} onSearch={setSearch} />
+          <Header search={search} onSearch={setSearch} count={count}/>
         <div className="sticky top-0 z-50 bg-white ml-4">
           
         </div>
@@ -91,7 +98,7 @@ function App() {
             </div>
           </div>
           <div className="flex-1  p-4">
-            <Product products={filterdproducts} selectedCategory={selectedCategory} />
+            <Product products={products}  selectedCategory={selectedCategory} onButtonClick={onButtonAdd} />
           </div>
         </div>
       </div>

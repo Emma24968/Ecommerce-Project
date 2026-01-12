@@ -1,14 +1,13 @@
 const sizes = ["XS", "S", "M", "L", "XL"];
 
-export const Size = ({ onFilter, selection,oncheckStatus }) => {
+export const Size = ({ onFilter, selection, oncheckStatus }) => {
   const handlefilter = (size) => {
     onFilter(size);
-    oncheckStatus(size)
+    oncheckStatus(size);
   };
   return (
     <div>
-      <h3 className="font-semibold mb-2">Size</h3>
-
+      <h3 className="font-semibold">Size</h3>
       <div className="grid grid-cols-3 gap-2">
         {sizes.map((size) => (
           <label key={size}>
