@@ -5,6 +5,7 @@ import { SideBar } from "./Components/Navigation/SideBar";
 import { Filter } from "./Components/Filter/Filter";
 import { Product } from "./Components/Hero-Section/Product_Page";
 import { products as initialProducts } from "./data/products";
+import { Login } from "./login/Login";
 
 function App() {
   // hooks
@@ -70,7 +71,8 @@ setCount(count + 1)
 
   return (
     <div className="flex h-screen ">
-      <div className="w-[5%] ">
+      <Login />
+      {/* <div className="w-[5%] ">
         <SideBar />
       </div>
       <div className="w-[95%] flex flex-col">
@@ -101,7 +103,7 @@ setCount(count + 1)
             <Product products={products}  selectedCategory={selectedCategory} onButtonClick={onButtonAdd} />
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
