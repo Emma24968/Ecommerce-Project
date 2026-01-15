@@ -16,13 +16,31 @@ function App() {
   const [selection, setSelection] = useState("");
   const [selectedColor, setSelectedColor] = useState("");
   const [search, setSearch] = useState("");
-  const [count, setCount] = useState(0)
-  console.log(count)
+  const [count, setCount] = useState(0);
+  const [cart, setCart] = useState([]);
 
-  const onButtonAdd = ()=>{
-setCount(count + 1)
-  }
+  
+  const addToCart = (product) => {
+    setCart((prev) => {
+      let productExist = false;
+      let productCart = [];
+      for (let i = 0; i < prev.length; i++) {
+        if (prev[i].id === product.id) {
+          productCart.push({ ...prev[i], quantity: prev[i].quantity + 1 });
+          productExist = true;
+        } else {
+          productCart.push({ ...prev[i] });
+        }
+      }
+      if (!productExist) {
+        productCart.push({ ...product, quantity: 1 });
+      }
+      return productCart;
+    });
+      setCount((initialCount) =>  initialCount+1);
+  };
 
+  
   const filterdproducts = initialProducts.filter((product) =>
     product.name.toLowerCase().includes(search.toLowerCase())
   );
@@ -71,15 +89,13 @@ setCount(count + 1)
 
   return (
     <div className="flex h-screen ">
-      <Login />
-      {/* <div className="w-[5%] ">
+      {/* <Login /> */}
+      <div className="w-[5%] ">
         <SideBar />
       </div>
       <div className="w-[95%] flex flex-col">
-          <Header search={search} onSearch={setSearch} count={count}/>
-        <div className="sticky top-0 z-50 bg-white ml-4">
-          
-        </div>
+        <Header search={search} onSearch={setSearch} count={count} />
+        <div className="sticky top-0 z-50 bg-white ml-4"></div>
         <div className="flex flex-1 bg-gray-50 ">
           <div className="w-[19%] pl-[10px]">
             <div className="sticky top-20">
@@ -100,10 +116,14 @@ setCount(count + 1)
             </div>
           </div>
           <div className="flex-1  p-4">
-            <Product products={products}  selectedCategory={selectedCategory} onButtonClick={onButtonAdd} />
+            <Product
+              products={products}
+              selectedCategory={selectedCategory}
+              onButtonClick={addToCart}
+            />
           </div>
         </div>
-      </div> */}
+      </div>
     </div>
   );
 }
